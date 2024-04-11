@@ -23,7 +23,7 @@ class RecipeMenuItem extends StatelessWidget {
         children: [
           Icon(
             mIcon,
-            color: Colors.redAccent,g
+            color: Colors.redAccent,
             size: 30,
           ),
           Text(
