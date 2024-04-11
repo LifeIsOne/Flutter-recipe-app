@@ -9,19 +9,20 @@ class RecipeMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      // padding: const EdgeInsets.only(top: 20),
-
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        RecipeMenuItem(mIcon: Icons.food_bank, text: "ALL"),
-        SizedBox(width: 25),
-        RecipeMenuItem(mIcon: Icons.emoji_food_beverage, text: "Coffee"),
-        SizedBox(width: 25),
-        RecipeMenuItem(mIcon: Icons.fastfood, text: "Buger"),
-        SizedBox(width: 25),
-        RecipeMenuItem(mIcon: Icons.local_pizza, text: "Pizza"),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 25),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          RecipeMenuItem(mIcon: Icons.food_bank, text: "ALL"),
+          SizedBox(width: 25),
+          RecipeMenuItem(mIcon: Icons.emoji_food_beverage, text: "Coffee"),
+          SizedBox(width: 25),
+          RecipeMenuItem(mIcon: Icons.fastfood, text: "Buger"),
+          SizedBox(width: 25),
+          RecipeMenuItem(mIcon: Icons.local_pizza, text: "Pizza"),
+        ],
+      ),
     );
   }
 }
